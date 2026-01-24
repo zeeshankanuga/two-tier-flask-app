@@ -50,5 +50,5 @@ networks:
     driver: bridge
 
 volumes:
-  mysql-data-zee:
+  mysql-data-zee: {}  # The colon and curly braces make it a mappin
                                                                                                                          56,1          Bot
