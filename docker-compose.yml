@@ -9,7 +9,7 @@ services:
       MYSQL_PASSWORD: admin
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_DATABASE: mydb
-      MYSQL_ROOT_HOST: %
+      MYSQL_ROOT_HOST: '%'
     networks:
       -  my-network
     ports:
