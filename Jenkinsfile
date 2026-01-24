@@ -1,4 +1,4 @@
-@Library("Shared") _
+@Library("Shared@flask") _
 pipeline{
     
     agent { label "dev"};
