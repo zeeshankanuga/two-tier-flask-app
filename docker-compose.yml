@@ -22,7 +22,7 @@ services:
       timeout: 5s
 
   flaskapp:
-    build: .
+    image: zeeshankanuga/flask-app:latest
     container_name: flask-app
     environment:
       MYSQL_HOST: mysql
