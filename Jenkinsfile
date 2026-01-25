@@ -39,6 +39,14 @@ pipeline {
                 }
             }
         }
+        stage('Trivy Security Scan') {
+            steps {
+                script {
+                    // Scan the image and output results to the console
+                    sh "trivy image --severity HIGH,CRITICAL zeeshankanuga/flask-app:latest"
+                }
+            }
+        }
         stage('Deploy') {
             steps {
                 sh '''
