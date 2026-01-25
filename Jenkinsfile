@@ -1,5 +1,5 @@
 pipeline {
-    agent { labesl: "dev"}; // Specifies where the entire pipeline runs
+    agent { label: 'dev'}; // Specifies where the entire pipeline runs
 
     stages {
         stage('code') {
