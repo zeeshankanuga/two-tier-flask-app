@@ -1,5 +1,5 @@
 pipeline {
-    agent any // Specifies where the entire pipeline runs
+    agent { labesl: "dev"}; // Specifies where the entire pipeline runs
 
     stages {
         stage('code') {
